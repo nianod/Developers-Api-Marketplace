@@ -40,7 +40,9 @@ const ApiCard = ({ api, index = 0 }: ApiCardProps) => {
                 {api.pricing}
               </Badge>
             </div>
+
           </CardHeader>
+
           <CardContent>
             <div className="space-y-3">
               <div className="flex items-center gap-4 text-sm text-muted-foreground">
@@ -49,6 +51,7 @@ const ApiCard = ({ api, index = 0 }: ApiCardProps) => {
                   <span className="font-medium text-foreground">{api.rating}</span>
                   <span>({api.reviews})</span>
                 </div>
+                
                 <div className="flex items-center gap-1">
                   <TrendingUp className="h-4 w-4" />
                   <span>{api.popularity}% popular</span>

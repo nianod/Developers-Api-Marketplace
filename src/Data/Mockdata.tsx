@@ -59,6 +59,7 @@ export const mockAPIs: API[] = [
     imageUrl: "/placeholder.svg",
     endpoints: 12,
   },
+  
   {
     id: "2",
     name: "Stock Market Data",
