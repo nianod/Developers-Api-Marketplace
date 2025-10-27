@@ -25,7 +25,7 @@ const Explore = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4">
-        {/* Header */}
+       
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -37,8 +37,7 @@ const Explore = () => {
           </p>
         </motion.div>
 
-        {/* Search and Filters */}
-        <motion.div
+         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.1 }}
@@ -47,7 +46,7 @@ const Explore = () => {
           <SearchBar />
 
           <div className="flex flex-wrap items-center gap-4">
-            {/* Category Filter */}
+            
             <Select value={selectedCategory} onValueChange={setSelectedCategory}>
               <SelectTrigger className="w-[200px]">
                 <SelectValue placeholder="Category" />
@@ -62,7 +61,7 @@ const Explore = () => {
               </SelectContent>
             </Select>
 
-            {/* Sort By */}
+
             <Select value={sortBy} onValueChange={setSortBy}>
               <SelectTrigger className="w-[200px]">
                 <SelectValue placeholder="Sort by" />
@@ -74,7 +73,7 @@ const Explore = () => {
               </SelectContent>
             </Select>
 
-            {/* View Toggle */}
+ 
             <div className="ml-auto flex gap-2">
               <Button
                 variant={view === "grid" ? "default" : "ghost"}
@@ -94,7 +93,7 @@ const Explore = () => {
           </div>
         </motion.div>
 
-        {/* Results Count */}
+   
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -104,7 +103,7 @@ const Explore = () => {
           Showing {filteredAPIs.length} results
         </motion.p>
 
-        {/* API Grid */}
+        
         <div
           className={
             view === "grid"
@@ -117,7 +116,7 @@ const Explore = () => {
           ))}
         </div>
 
-        {/* Load More */}
+    
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}

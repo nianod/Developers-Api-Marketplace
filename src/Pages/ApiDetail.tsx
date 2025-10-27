@@ -27,7 +27,7 @@ const ApiDetail = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4">
-        {/* Back Button */}
+     
         <motion.div
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
@@ -41,7 +41,6 @@ const ApiDetail = () => {
           </Link>
         </motion.div>
 
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -86,7 +85,6 @@ const ApiDetail = () => {
           </div>
         </motion.div>
 
-        {/* Content Tabs */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

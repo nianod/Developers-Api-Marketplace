@@ -19,7 +19,6 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen py-8">
       <div className="container mx-auto px-4">
-        {/* Header */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -35,7 +34,7 @@ const Dashboard = () => {
           </Button>
         </motion.div>
 
-        {/* Stats */}
+    
         <div className="mb-8 grid gap-6 md:grid-cols-3">
           {stats.map((stat, index) => (
             <motion.div
@@ -61,7 +60,7 @@ const Dashboard = () => {
           ))}
         </div>
 
-        {/* My APIs */}
+  
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
